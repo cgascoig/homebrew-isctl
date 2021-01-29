@@ -5,12 +5,12 @@
 class Isctl < Formula
   desc ""
   homepage ""
-  version "0.1.4-rc0"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cgascoig/isctl/releases/download/v0.1.4-rc0/isctl_0.1.4-rc0_Darwin_x86_64.zip"
-    sha256 "823de565fbaba3806e6c3d3ff6facffc962b240f79a203fa91a7865e3bd07f1b"
+    url "https://github.com/cgascoig/isctl/releases/download/v0.1.4/isctl_0.1.4_Darwin_x86_64.zip"
+    sha256 "9503f9a54dabcee44ef45c0aafec47335ce5283bdbc13b8079e201d95b96926d"
   end
 
   def install
