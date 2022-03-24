@@ -6,7 +6,6 @@ class Isctl < Formula
   desc ""
   homepage ""
   version "0.1.5"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/cgascoig/isctl/releases/download/v0.1.5/isctl_0.1.5_Darwin_x86_64.zip"
