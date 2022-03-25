@@ -5,14 +5,25 @@
 class Isctl < Formula
   desc ""
   homepage ""
-  version "0.1.5"
+  version "0.1.6"
+  depends_on :macos
 
-  if OS.mac?
-    url "https://github.com/cgascoig/isctl/releases/download/v0.1.5/isctl_0.1.5_Darwin_x86_64.zip"
-    sha256 "f621c49a6c3000dbf6cfc21241f8750e3f5a53b5a0e32d397d3fba574bc98854"
-  end
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/cgascoig/isctl/releases/download/v0.1.6/isctl_0.1.6_Darwin_arm64.zip"
+      sha256 "e5e829aaf2d6291e86a3e677a30f6b606ac193f6f33a0901d97401cb10fd30d3"
 
-  def install
-    bin.install "isctl"
+      def install
+        bin.install "isctl"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/cgascoig/isctl/releases/download/v0.1.6/isctl_0.1.6_Darwin_x86_64.zip"
+      sha256 "7bdc11f1de39b67b52b44d80ee866c54047038cbffc777efdc13aea16c8ed5af"
+
+      def install
+        bin.install "isctl"
+      end
+    end
   end
 end
