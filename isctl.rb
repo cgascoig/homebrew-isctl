@@ -11,7 +11,7 @@ class Isctl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cgascoig/isctl/releases/download/v0.1.22/isctl_0.1.22_Darwin_x86_64.zip"
-      sha256 ""
+      sha256 "3e0455ad885c03a371b059e7fb97904c8fcbdd277b2b3f77f2103dd996aad4f1"
 
       def install
         bin.install "isctl"
@@ -19,7 +19,7 @@ class Isctl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cgascoig/isctl/releases/download/v0.1.22/isctl_0.1.22_Darwin_arm64.zip"
-      sha256 ""
+      sha256 "64237694efe6c93f42d72d271fc5277dbd2bb0fd5111f8a53b3bf7e918748a53"
 
       def install
         bin.install "isctl"
