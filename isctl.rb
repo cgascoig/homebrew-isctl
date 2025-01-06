@@ -18,8 +18,8 @@ class Isctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cgascoig/isctl/releases/download/v0.2.7/isctl_0.2.7_Darwin_arm64.zip"
-      sha256 ""
+      url "https://github.com/cgascoig/isctl/releases/download/v0.2.7/isctl_0.2.7_Darwin_arm64_v8.0.zip"
+      sha256 "3a2029a29dc07057d96af298f03a765c66e57638af8a1da509bd0e795a35299c"
 
       def install
         bin.install "isctl"
