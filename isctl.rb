@@ -5,20 +5,20 @@
 class Isctl < Formula
   desc ""
   homepage ""
-  version "0.2.15"
+  version "0.2.16"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cgascoig/isctl/releases/download/v0.2.15/isctl_0.2.15_Darwin_x86_64.zip"
-      sha256 "adee811c5ba7530fcd03acb2731c5f10af6c24a603269b4d8f47636dacbdfade"
+      url "https://github.com/cgascoig/isctl/releases/download/v0.2.16/isctl_0.2.16_Darwin_x86_64.zip"
+      sha256 "880bc7660f983cb6cefb11c2cf6a98d38ed51d8cff2f234d016eb1198f15beea"
 
       def install
         bin.install "isctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cgascoig/isctl/releases/download/v0.2.15/isctl_0.2.15_Darwin_arm64_v8.0.zip"
-      sha256 "be28c54f35e6e38d68c377489aeed6b72c3899440852213736fc1259712ba5ec"
+      url "https://github.com/cgascoig/isctl/releases/download/v0.2.16/isctl_0.2.16_Darwin_arm64_v8.0.zip"
+      sha256 "638da2606d4d5e7820c1f2b7029ebf76ded74d1aca04079b048275dec3a0a7a4"
 
       def install
         bin.install "isctl"
@@ -30,7 +30,7 @@ on_linux do
     if Hardware::CPU.intel?
       # Note: Assuming .zip here to match your macOS configuration. 
       # If your Linux build generates a tarball, update this extension to .tar.gz
-      url "https://github.com/cgascoig/isctl/releases/download/v0.2.15/isctl_0.2.15_Linux_x86_64.tar.gz"
+      url "https://github.com/cgascoig/isctl/releases/download/v0.2.16/isctl_0.2.16_Linux_x86_64.tar.gz"
       sha256 ""
 
       def install
